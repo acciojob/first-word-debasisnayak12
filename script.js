@@ -4,7 +4,11 @@ function firstWord(s) {
 		return s;
 	}
 	let extractFirst = s.split(" ");
-	return extractFirst[0];
+	if(extractFirst[0] === ""){
+		return extractFirst[1];
+	}else{
+		return extractFirst[0];
+	}
 }
 
 // Do not change the code below
